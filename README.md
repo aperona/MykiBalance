@@ -11,7 +11,7 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 1. Download [Scriptable](https://apps.apple.com/us/app/scriptable/id1405459188?ign-mpt=uo%3D4) from App Store
 
-2. Add new Script on Scriptable, copy the code in `MykiBalance.js` and paste to your new Script
+2. Add new Script on Scriptable, copy everything in `MykiBalance.js` and paste to your new Script
 
 3. Replace "Your Card Number" with your Myki number. eg. "308425123456789".   
    The code will be like 
