@@ -8,7 +8,7 @@
 // For the same reason, the passenger type (Concession, Child etc) may not accurate, I only have a full fare Card.
 // Important! This Widget is not affiliated to PTV or Myki. For personal use only.
 
-let cardNumber = arg.widgetParameter
+let cardNumber = args.widgetParameter
 
 let ptvWebAuth = await getMykitoken()
 
