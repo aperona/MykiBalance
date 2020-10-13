@@ -26,7 +26,7 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 7. Now you may see the Magic, Enjoy!
 
-  * Tips: Tap the Money on the Widget, you will be redirect to Official Myki Topup Website.
+  * Tips: Tap the Money on the Widget (Not the Widget itself, the money or the up-right side Balance Status), you will be redirect to Official Myki Topup Website in Chrome (you need Chrome installed on your phone).
 
 
 #### You can even run the script on Shortcuts. eg. Ask siri to check you balance, Set a regular time to Check you balance and more!!!
