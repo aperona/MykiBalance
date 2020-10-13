@@ -1,20 +1,14 @@
-
-// 
 // Myki Balance V1.0
 // Run on Scriptable
 // Created by Ricky Li on 2020/10/12
 // Last modified on 2020/10/13
 // https://github.com/imchlorine/MykiBalance.git
 // This Script is used for feching Myki Balance from MyKi website api.
-// This script does not suport Myki Pass atm as I do not have a Myki Pass.
-// No idea about the myki pass data will be like. 
+// This script does not suport Myki Pass atm as I do not have a Myki Pass. No idea about the myki pass data will be like. 
 // For the same reason, the passenger type (Full Fare, Concession, Child etc) may not accurate, feel free to let me know how to fix them
-// 
 
-let cardNumber = "Your Card Number"
-// 
-// Do not Edit below
-// 
+
+let cardNumber = arg.widgetParameter
 
 let ptvWebAuth = await getMykitoken()
 
@@ -30,6 +24,15 @@ Script.setWidget(widget)
 Script.complete()
 
 async function createWidget(card) {
+    
+ let widget = new ListWidget()
+ 
+ if(card == null){
+   let alertMessage =  widget.addText("Invalid Card Number , Please check! " + cardNumber)
+       alertMessage.font = Font.boldSystemFont(14)
+       alertMessage.textColor = new Color("#ff0000") 
+  return widget
+ }
 
  let currentTime = new Date()
  let df = new DateFormatter()
@@ -78,7 +81,6 @@ async function createWidget(card) {
         break;
  }
  
-    let widget = new ListWidget()
     widget.backgroundColor = new Color("#4a525a")
 
     widget.addSpacer()
@@ -182,9 +184,13 @@ async function getCard() {
   if (result["code"] == 1) {
     return result["data"][0]
   }
-  let alert = new Alert()
+ 
+  if (!config.runsInWidget) {
+    let alert = new Alert()
     alert.title = "Error"
     alert.message = result["message"]
     await alert.present()
+  }
+    
   return null
 }
