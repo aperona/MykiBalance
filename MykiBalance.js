@@ -5,8 +5,8 @@
 // https://github.com/imchlorine/MykiBalance.git
 // This Script is used for feching Myki Balance from MyKi website api.
 // This script does not suport Myki Pass atm as I do not have a Myki Pass. No idea about the myki pass data will be like. 
-// For the same reason, the passenger type (Full Fare, Concession, Child etc) may not accurate, feel free to let me know how to fix them
-
+// For the same reason, the passenger type (Concession, Child etc) may not accurate, I only have a full fare Card.
+// Important! This Widget is not affiliated to PTV or Myki. For personal use only.
 
 let cardNumber = arg.widgetParameter
 
