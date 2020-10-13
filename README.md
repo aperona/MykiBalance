@@ -17,8 +17,11 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 5. Go to your Widgets library and find Scriptable, make sure pick the Middle one and Add Widget to your home screen
 
-6. Long press the Widget and go Edit Widget, Choose the `Script` you Added, set `When Interacting` to `Run Script`, so you can manually update your balance by tapping the widget. Input your Myki Card Number into `Parameter` like below
-![](https://github.com/imchlorine/MykiBalance/blob/main/settings.jpg)
+6. Long press the Widget and go Edit Widget, Choose the `Script` you Added, set `When Interacting` to `Run Script`, so you can manually update your balance by tapping the widget. Input your Myki Card Number into `Parameter` like below: <br />
+     
+       
+         
+![setting](https://github.com/imchlorine/MykiBalance/blob/main/settings.jpg)
 
 
 7. Now you may see the Magic, Enjoy!
