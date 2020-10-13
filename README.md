@@ -2,7 +2,7 @@
 Fetch Myki Balance with Scriptable, add to iOS 14 Widget.    
 
 
-**Important! This Widget is not affiliate to PTV or Myki, for personal use only.**
+**Important! This Widget is not affiliated to PTV or Myki. For personal use only.**
 
 This script does not suport Myki Pass atm as I do not have a Myki Pass. No idea about the myki pass data will be like.  
 For the same reason, the passenger type (Full Fare, Concession, Child etc) may not accurate, feel free to let me know how to fix them
