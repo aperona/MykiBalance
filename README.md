@@ -13,7 +13,7 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 2. Add new Script on Scriptable, copy Everything in `MykiBalance.js` and paste to your new Script
 
-4. Replace "Your myki card" with your Card number.  
+4. Replace "Your Myki Card" with your card number.  
    eg. `let cardNumber = "308425123456789"`
 
 5. Run the Code, you may see your Balance now (if not, check your card number again). You are almost there.
@@ -22,7 +22,7 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 6. Long press the Widget and go Edit Widget, Choose the `Script` you Added, set `When Interacting` to `Run Script`, so you can manually update your balance by tapping the widget. Left `Parameter` empty like below: <br />  
          
-![setting](https://github.com/imchlorine/MykiBalance/blob/main/settings.jpg)
+![setting](https://github.com/imchlorine/MykiBalance/blob/main/setting.jpg)
 
 
 7. Now you may see the Magic, Enjoy!
@@ -30,5 +30,9 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
   * Tips: Tap the Money on the Widget (Not the Widget itself, the money or the up-right side Balance Status), you will be redirect to Official Myki Topup Website in Chrome (you need Chrome installed on your phone).
 
 
-#### You can even run the script on Shortcuts. eg. Ask siri to check you balance, Set a regular time to Check you balance and more!!!
+## How to add the Script to Siri Shortcuts?
+
+ Go to your Scriptable -> Settings -> Siri Shortcuts -> Add Siri Shortcut -> Select the Myki Balance Script -> Add to Siri
+
+
    
