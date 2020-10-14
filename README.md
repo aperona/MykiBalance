@@ -11,9 +11,9 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 1. Download [Scriptable](https://apps.apple.com/us/app/scriptable/id1405459188?ign-mpt=uo%3D4) from App Store
 
-2. Add new Script on Scriptable, copy Everything in `MykiBalance.js` and paste to your new Script
+2. Add new Script on Scriptable, copy Everything in [MykiBalance.js](https://github.com/imchlorine/MykiBalance/blob/main/MykiBalance.js) and paste to your new Script
 
-4. Replace "Your Myki Card" with your card number.  
+4. Replace "Your Myki Card" with your card number  
    eg. `let cardNumber = "308425123456789"`
 
 5. Run the Code, you may see your Balance now (if not, check your card number again). You are almost there.
@@ -32,7 +32,9 @@ For the same reason, the passenger type (Full Fare, Concession, Child etc) may n
 
 ## How to add the Script to Siri Shortcuts?
 
- Go to your Scriptable -> Settings -> Siri Shortcuts -> Add Siri Shortcut -> Select the Myki Balance Script -> Add to Siri
+ Go to your Scriptable -> Settings -> Siri Shortcuts -> Add Siri Shortcut -> Select the Myki Balance Script -> Add to Siri  
+ 
+ Now try to ask Siri to check your balance.
 
 
    
