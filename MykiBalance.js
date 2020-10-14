@@ -1,14 +1,20 @@
-// Myki Balance V1.0
+// Myki Balance V1.1
 // Run on Scriptable
 // Created by Ricky Li on 2020/10/12
-// Last modified on 2020/10/13
+// Last modified on 2020/10/14
 // https://github.com/imchlorine/MykiBalance.git
 // This Script is used for feching Myki Balance from MyKi website api.
 // This script does not suport Myki Pass atm as I do not have a Myki Pass. No idea about the myki pass data will be like. 
 // For the same reason, the passenger type (Concession, Child etc) may not accurate, I only have a full fare Card.
 // Important! This Widget is not affiliated to PTV or Myki. For personal use only.
 
-let cardNumber = args.widgetParameter
+
+// Replace "Your Myki Card" with your Card Number
+// eg. let cardNumber = "308425123456789"
+let cardNumber = "Your Myki Card"
+
+
+// DO NOT edit below
 
 let ptvWebAuth = await getMykitoken()
 
@@ -44,6 +50,10 @@ async function createWidget(card) {
  let rangeTxt = ""
  let rangeColor = ""
  let balanceTxt = mykiBalance < 0 ? "- $" + mykiBalance.replace(/-/, "") : "$" + mykiBalance
+
+if (config.runsWithSiri) {
+  Speech.speak("You have " + balanceTxt + " left in your Myki Balance!")
+}
  
  switch (true) {
     case (mykiBalance <= 0):
@@ -179,17 +189,10 @@ async function getCard() {
   req.body = JSON.stringify(data)
   let result = await req.loadJSON()
 
-//   console.log(result)
-
+   //   console.log(result)
+  
   if (result["code"] == 1) {
     return result["data"][0]
-  }
- 
-  if (!config.runsInWidget) {
-    let alert = new Alert()
-    alert.title = "Error"
-    alert.message = result["message"]
-    await alert.present()
   }
     
   return null
