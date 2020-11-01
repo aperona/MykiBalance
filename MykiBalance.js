@@ -74,17 +74,20 @@ if (config.runsWithSiri) {
  let passengerTxt = ""
  
  switch (passengerCode) {
-    case 1:
+    case "1":
         passengerTxt = "Full Fare"
         break;
-    case 2:
+    case "2":
         passengerTxt = "Concession"
         break;
-    case 3:
+    case "3":
         passengerTxt = "Child"
         break;
-    case 4:
+    case "4":
         passengerTxt = "Senior"
+        break;
+    case "7":
+        passengerTxt = "Tertiary Student Concession"
         break;
      default:
         passengerTxt = "Full Fare"
